@@ -1,64 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Sjong : ">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Sjong</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/sjong2013/sjong">View on GitHub</a>
-
-          <h1 id="project_title">Sjong</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/sjong2013/sjong/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/sjong2013/sjong/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>
-</p>
-  <div>
-   Firebase Chat Demo <br>
-    Random chitchat area! Have fun!~<br>For Anime Fans only<br><br><div>
+  <header>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.js"></script>
+  </header>
+  
+  <body ng-app="">
+    One of the cool things about Angularjs is how it handles two-way binding. This means that it can bind elements to a Javascript variable and automatically update them whenever they change. 
+    <br>
+    Type in the textbox below and see how the text below the box changes. 
+    This is because the text box is bound to a variable called "name".<br>
+    <hr>
+    Type a name in this box: 
+    <input type="text" ng-model="name"><br>
+    Name: {{name}}<br>
     
-    Username:
-    </div>
-
-  <ul></ul>
-</div>
-
-
-
-<p>
-</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Sjong maintained by <a href="https://github.com/sjong2013">sjong2013</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
+    <hr>
+    Your turn. See if you can bind this text box to the variable "color"
+    <br>
+    Type a color in this box: 
+    <input type="text" ng-model="color"><br>
+    Color: {{color}}
 
   </body>
+
 </html>
